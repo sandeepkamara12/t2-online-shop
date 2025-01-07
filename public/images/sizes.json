@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "s",
+        "description": "Small size, ideal for slim fits.",
+        "chest": "35-37 inches",
+        "waist": "27-29 inches",
+        "image": "/images/sizes/s-tshirt.jpg"
+    },
+    {
+        "id": 2,
+        "name": "m",
+        "description": "Medium size, fits most average builds.",
+        "chest": "38-40 inches",
+        "waist": "30-32 inches",
+        "image": "/images/sizes/m-tshirt.jpg"
+    },
+    {
+        "id": 3,
+        "name": "l",
+        "description": "Large size, great for broader shoulders.",
+        "chest": "41-43 inches",
+        "waist": "33-35 inches",
+        "image": "/images/sizes/l-tshirt.jpg"
+    },
+    {
+        "id": 4,
+        "name": "xl",
+        "description": "Extra Large size, comfortable for big builds.",
+        "chest": "44-46 inches",
+        "waist": "36-38 inches",
+        "image": "/images/sizes/xl-tshirt.jpg"
+    }
+]
