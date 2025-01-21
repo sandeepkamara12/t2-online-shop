@@ -10,7 +10,7 @@
 }
 .my-swiper-container .swiper-button-prev:hover,
 .my-swiper-container .swiper-button-next:hover {
-  color:#cc9966;
+  color: #cc9966;
 }
 .my-swiper-container .swiper-button-prev:focus,
 .my-swiper-container .swiper-button-next:focus {
@@ -20,13 +20,16 @@
   --swiper-pagination-bullet-width: 8px;
   --swiper-pagination-bullet-height: 8px;
   --swiper-pagination-bullet-horizontal-gap: 6px;
-  transition: all .3s ease;
-  background:transparent;
-  border:1px solid #ffffff;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 1px solid #ffffff;
   opacity: 1;
 }
-.my-swiper-container .swiper-pagination-bullet:focus {outline: none;}
-.my-swiper-container .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+.my-swiper-container .swiper-pagination-bullet:focus {
+  outline: none;
+}
+.my-swiper-container
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
   background-color: #cc9966;
   border-color: #cc9966;
 }
@@ -34,27 +37,39 @@
   --swiper-pagination-bullet-width: 18px;
   background-color: #ffffff;
   border-radius: 5px;
-  cursor: default!important;
+  cursor: default !important;
 }
 .brands {
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   bottom: 0;
   z-index: 99;
 }
-footer.footer .social-icons a,  
-footer.footer p,  
+footer.footer .social-icons a,
+footer.footer p,
 footer.footer ul li a {
-  color:#ffffff;
+  color: #ffffff;
 }
 footer.footer .social-icons a:hover {
-  color:#cc9966;
-}  
-.brands-border ul li {flex: 0 0 20%; max-width: 20%;}
-.brands-border ul li:not(:nth-child(5n)) > .brand {border-right: 0.1rem solid #ebebeb;}
-.brands-border ul li:not(:nth-last-child(-n+5)) > .brand {
-  border-bottom: .1rem solid #ebebeb;
+  color: #cc9966;
+}
+.brands-border ul li {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.brands-border ul li:not(:nth-child(5n)) > .brand {
+  border-right: 0.1rem solid #ebebeb;
+}
+.brands-border ul li:not(:nth-last-child(-n + 5)) > .brand {
+  border-bottom: 0.1rem solid #ebebeb;
 }
 .brands .container {
   max-width: 1000px;
+}
+.category .banner-title {
+  font-size: 1.5rem;
+}
+.category .banner-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
 }

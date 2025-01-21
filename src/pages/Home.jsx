@@ -12,18 +12,16 @@ import Category from "../components/Home/Category";
 const Home = () => {
   return (
     <>
+      <Category />
       <Banner />
       <Brands />
       <NewProducts />
-      <ShopByCategory />
       <SaleProducts />
       <Newsletter />
       <BestSeller />
-      <Category />
       <RecentProducts />
     </>
   );
 };
 
 export default Home;
-          

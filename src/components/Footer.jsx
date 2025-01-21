@@ -3,55 +3,55 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-    <div className="container">
-                <hr/>
-            	<div className="row justify-content-center">
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="icon-box icon-box-card text-center">
-                            <span className="icon-box-icon">
-                                <i className="icon-rocket"></i>
-                            </span>
-                            <div className="icon-box-content">
-                                <h3 className="icon-box-title">Payment &amp; Delivery</h3>
-                                <p>Free shipping for orders over $50</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="icon-box icon-box-card text-center">
-                            <span className="icon-box-icon">
-                                <i className="icon-rotate-left"></i>
-                            </span>
-                            <div className="icon-box-content">
-                                <h3 className="icon-box-title">Return &amp; Refund</h3>
-                                <p>Free 100% money back guarantee</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="icon-box icon-box-card text-center">
-                            <span className="icon-box-icon">
-                                <i className="icon-life-ring"></i>
-                            </span>
-                            <div className="icon-box-content">
-                                <h3 className="icon-box-title">Quality Support</h3>
-                                <p>Alway online feedback 24/7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="mb-2"></div>
+      <div className="container-fluid px-5">
+        <hr />
+        <div className="row justify-content-center">
+          <div className="col-lg-4 col-sm-6">
+            <div className="icon-box icon-box-card text-center">
+              <span className="icon-box-icon">
+                <i className="icon-rocket"></i>
+              </span>
+              <div className="icon-box-content">
+                <h3 className="icon-box-title">Payment &amp; Delivery</h3>
+                <p>Free shipping for orders over $50</p>
+              </div>
             </div>
+          </div>
+
+          <div className="col-lg-4 col-sm-6">
+            <div className="icon-box icon-box-card text-center">
+              <span className="icon-box-icon">
+                <i className="icon-rotate-left"></i>
+              </span>
+              <div className="icon-box-content">
+                <h3 className="icon-box-title">Return &amp; Refund</h3>
+                <p>Free 100% money back guarantee</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-sm-6">
+            <div className="icon-box icon-box-card text-center">
+              <span className="icon-box-icon">
+                <i className="icon-life-ring"></i>
+              </span>
+              <div className="icon-box-content">
+                <h3 className="icon-box-title">Quality Support</h3>
+                <p>Alway online feedback 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-2"></div>
+      </div>
       <div
-        className="cta cta-display bg-image pt-4 pb-4"
+        className="cta cta-display bg-image pt-6 pb-6"
         style={{ backgroundImage: "url(/images/bg-6.jpg)" }}
       >
-        <div className="container">
+        <div className="container-fluid px-5">
           <div className="row justify-content-center">
-            <div className="col-md-10 col-lg-9 col-xl-8">
+            <div className="col-md-10 col-lg-9 col-xl-6">
               <div className="row no-gutters flex-column flex-sm-row align-items-sm-center">
                 <div className="col">
                   <h3 className="cta-title text-white">
@@ -73,9 +73,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="footer footer-dark bg-dark pb-8">
+      <footer className="footer footer-dark bg-dark">
         <div className="footer-middle">
-          <div className="container">
+          <div className="container-fluid px-5">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
                 <div className="widget widget-about">
@@ -136,49 +136,69 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-lg-3">
+              <div className="col-sm-6 col-lg-2">
                 <div className="widget">
-                  <h4 className="widget-title">Useful Links</h4>
+                  <h4 className="widget-title">We are</h4>
 
                   <ul className="widget-list">
                     <li>
-                      <a href="about.html">About Panda</a>
+                      <a href="about.html">Contact Panda</a>
                     </li>
                     <li>
-                      <a href="#">How to shop on Panda</a>
+                      <a href="#">About Panda</a>
                     </li>
                     <li>
-                      <a href="#">FAQ</a>
+                      <a href="about.html">Carrer</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact us</a>
+                      <a href="#">Story</a>
                     </li>
                     <li>
-                      <a href="login.html">Log in</a>
+                      <a href="#">Press</a>
                     </li>
                   </ul>
                 </div>
               </div>
-
-              <div className="col-sm-6 col-lg-3">
+              <div className="col-sm-6 col-lg-2">
                 <div className="widget">
-                  <h4 className="widget-title">Customer Service</h4>
+                  <h4 className="widget-title">Need Help</h4>
 
                   <ul className="widget-list">
                     <li>
-                      <a href="#">Payment Methods</a>
-                    </li>
-                    <li>
-                      <a href="#">Money-back guarantee!</a>
-                    </li>
-                    <li>
-                      <a href="#">Returns</a>
+                      <a href="about.html">Payment Methods</a>
                     </li>
                     <li>
                       <a href="#">Shipping</a>
                     </li>
                     <li>
+                      <a href="#">Cancellation & Returns</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-lg-2">
+                <div className="widget">
+                  <h4 className="widget-title">Customer Policy</h4>
+
+                  <ul className="widget-list">
+                    <li>
+                      <a href="#">Cancellation & Returns</a>
+                    </li>
+                    <li>
                       <a href="#">Terms and conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Security</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                      <a href="#">Sitemap</a>
                     </li>
                     <li>
                       <a href="#">Privacy Policy</a>
@@ -187,7 +207,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-lg-3">
+              <div className="col-sm-6 col-lg-2">
                 <div className="widget">
                   <h4 className="widget-title">My Account</h4>
 
@@ -215,7 +235,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div className="container">
+          <div className="container-fluid px-5">
             <p className="footer-copyright">
               Copyright © 2019 Panda Store. All Rights Reserved.
             </p>
