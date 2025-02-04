@@ -73,3 +73,9 @@ footer.footer .social-icons a:hover {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+.category .banner a  {
+  width: 50px;
+  height:50px;
+  margin: auto;
+}

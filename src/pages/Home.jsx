@@ -16,6 +16,23 @@ const Home = () => {
       <Banner />
       <Brands />
       <NewProducts />
+      <div
+        className="video-banner video-banner-bg bg-image text-center"
+        style={{ backgroundImage: "url(/bg-1.jpg)" }}
+      >
+        <div className="container">
+          <h3 className="video-banner-title h1 text-white">
+            <span>New Video</span>
+            <strong>Womens New Arrivals</strong>
+          </h3>
+          <a
+            href="https://www.youtube.com/watch?v=vBPgmASQ1A0"
+            className="btn-video btn-iframe"
+          >
+            <i className="icon-play"></i>
+          </a>
+        </div>
+      </div>
       <SaleProducts />
       <Newsletter />
       <BestSeller />

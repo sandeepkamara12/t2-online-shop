@@ -7,7 +7,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const Brands = () => {
   return (
-    <div className="container-fluid px-5">
+    <div className="container px-5">
       <Swiper
         className="my-swiper-container brands-border"
         modules={[Navigation, Autoplay]}
@@ -18,7 +18,7 @@ const Brands = () => {
           disableOnInteraction: false,
         }}
         spaceBetween={0}
-        slidesPerView={8}
+        slidesPerView={5}
       >
         <SwiperSlide>
           <a href="#" className="brand">

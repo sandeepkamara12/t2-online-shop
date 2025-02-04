@@ -17,7 +17,7 @@ const Shop = () => {
   const [visibleCount, setVisibleCount] = useState(6);
   const [isLoading, setIsLoading] = useState(false);
   const [clearFilter, setClearFilter] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
+
   const [filters, setFilters] = useState({
     category: [],
     size: [],
@@ -95,17 +95,7 @@ const Shop = () => {
     }
   }, [products, totalProducts, visibleCount]);
 
-  const closeModalFn = () => {
-    document.body.classList.remove("modal-open");
-    document.body.classList.remove("adjust-padding");
-    setOpenModal(false);
-  };
 
-  const openModalFn = () => {
-    document.body.classList.add("modal-open");
-    document.body.classList.add("adjust-padding");
-    setOpenModal(true);
-  };
 
   useEffect(() => {
     if (isItemAddedToCart?.content) {
@@ -172,13 +162,12 @@ const Shop = () => {
                 clearFilter={clearFilter}
               />
               <div
-                className={`products py-4 layout-${layout} ${
-                  layout === "three"
-                    ? !totalProducts
-                      ? "mx-0 row"
-                      : "row"
-                    : ""
-                }`}
+                className={`products py-4 layout-${layout} ${layout === "three"
+                  ? !totalProducts
+                    ? "mx-0 row"
+                    : "row"
+                  : ""
+                  }`}
               >
                 {products?.length > 0 ? (
                   products

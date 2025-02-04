@@ -9,7 +9,7 @@ import Product from "../Products/Product";
 
 const RecentProducts = () => {
   return (
-    <div className="container-full pt-6 pb-6 px-5">
+    <div className="container pt-6 pb-6 px-5">
       <div className="heading mb-3">
         <h2 className="title-lg">Recent Arrival</h2>
         <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>

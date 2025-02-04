@@ -7,6 +7,7 @@ import {
 import { useSelector } from "react-redux";
 
 const ProductWishlist = ({ productId }) => {
+
   const wishlist = useSelector((state) => state.wishlist.wishlist.wishlist);
   let dispatch = useDispatch();
 
@@ -36,6 +37,7 @@ const ProductWishlist = ({ productId }) => {
   };
 
   const addItemToWishlist = (e, productId) => {
+    console.log(productId, 'productId');
     if (!userId) return;
     e.target.checked
       ? dispatch(addItemToWishlists({ productId: productId }))

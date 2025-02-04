@@ -47,7 +47,7 @@ const NewProducts = () => {
     });
   };
   return (
-    <div className="container-full pt-6 pb-6 px-5">
+    <div className="container pt-6 pb-6 px-5">
       <div className="heading mb-3">
         <h2 className="title-lg">New Products</h2>
 
@@ -119,7 +119,7 @@ const NewProducts = () => {
             modules={[Navigation, Autoplay]}
             navigation
             spaceBetween={0}
-            slidesPerView={6}
+            slidesPerView={4}
           >
             {Array(8)
               .fill(null)
@@ -148,7 +148,7 @@ const NewProducts = () => {
             modules={[Navigation, Autoplay]}
             navigation
             spaceBetween={0}
-            slidesPerView={6}
+            slidesPerView={4}
           >
             {Array(8)
               .fill(null)
@@ -174,7 +174,7 @@ const NewProducts = () => {
             modules={[Navigation, Autoplay]}
             navigation
             spaceBetween={0}
-            slidesPerView={6}
+            slidesPerView={4}
           >
             {Array(8)
               .fill(null)
@@ -200,7 +200,7 @@ const NewProducts = () => {
             modules={[Navigation, Autoplay]}
             navigation
             spaceBetween={0}
-            slidesPerView={6}
+            slidesPerView={4}
           >
             {Array(8)
               .fill(null)

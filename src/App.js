@@ -17,12 +17,26 @@ import axios from "axios";
 import Shop from "./pages/Shop";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
+import Cart from "./pages/Cart";
+import Wishlist from "./pages/Wishlist";
 const myContext = createContext();
 
 function App() {
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState(null);
+  const [openModal, setOpenModal] = useState(false);
 
+  const closeModalFn = () => {
+    document.body.classList.remove("modal-open");
+    document.body.classList.remove("adjust-padding");
+    setOpenModal(false);
+  };
+
+  const openModalFn = () => {
+    document.body.classList.add("modal-open");
+    document.body.classList.add("adjust-padding");
+    setOpenModal(true);
+  };
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries");
   }, []);
@@ -36,12 +50,14 @@ function App() {
     <BrowserRouter>
       <myContext.Provider value={value}>
         <Provider store={store}>
-          <Header />
+          <Header openModalFn={openModalFn} />
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/shop" element={<Shop />}></Route>
+            <Route path="/cart" element={<Cart />}></Route>
+            <Route path="/wishlist" element={<Wishlist />}></Route>
           </Routes>
-          <Footer />
+          <Footer openModal={openModal} closeModalFn={closeModalFn} />
         </Provider>
       </myContext.Provider>
     </BrowserRouter>

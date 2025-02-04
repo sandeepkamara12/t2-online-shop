@@ -1,13 +1,63 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import useScript from '../hooks/useScript';
 import CountryDropdown from "./CountryDropdown";
 import { useContext } from "react";
 import { myContext } from "../App";
-const Header = () => {
+import { removeItemFromCart } from "../store/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+
+const Header = ({ openModalFn }) => {
+
   const context = useContext(myContext);
-  // useScript('../assets/scripts/bootstrap.bundle.min.js')
-  // useScript('../assets/scripts/main.js')
+  const wishlistProducts = useSelector((state) => state.wishlist.wishlist.wishlist);
+  const cartProductsInfo = useSelector((state) => state.cart.carts);
+
+  const dispatch = useDispatch();
+
+  const [userCartProducts, setUserCartProducts] = useState([]);
+  const [wishlistCount, setWishlistCount] = useState(0);
+  const [cartCount, setCartCount] = useState(0);
+  const [userId, setUserId] = useState(null);
+
+  const updateUserAndWishlistAndCart = () => {
+    if (typeof window !== "undefined") {
+      const userData = localStorage.getItem("data");
+      if (userData) {
+        /* Get User Information */
+        const parsedData = JSON.parse(userData);
+        setUserId(parsedData.userId);
+
+        setWishlistCount(wishlistProducts?.length);
+
+        /* Get Cart Information */
+        setUserCartProducts(cartProductsInfo?.cart);
+        setCartCount(cartProductsInfo?.cartSummary?.totalItems);
+      } else {
+        setUserId(null);
+        setWishlistCount(0);
+        setCartCount(0);
+      }
+    }
+  };
+
+  useEffect(() => {
+    updateUserAndWishlistAndCart();
+  }, []);
+
+  useEffect(() => {
+    updateUserAndWishlistAndCart();
+  }, [wishlistProducts, userId, cartProductsInfo?.cart]);
+
+
+  const logout = () => {
+    updateUserAndWishlistAndCart();
+    localStorage.removeItem("data");
+  };
+
+  const removeItemFromCarts = (cartId) => {
+    dispatch(removeItemFromCart({ cartId: cartId }));
+  }
   return (
     <header className="header">
       <div className="header-top">
@@ -51,26 +101,26 @@ const Header = () => {
                         />
                       </svg>
                       <span className="wishlist-count text-white">
-                        {/* {wishlistCount} */}
+                        {wishlistCount}
                       </span>
                     </Link>
                   </li>
                   <li>
-                    {/* {userId == null ? ( */}
-                    <Link
-                      to="#"
-                      // onClick={openModalFn}
-                    >
-                      <i className="icon-user"></i>Login
-                    </Link>
-                    {/* ) : ( */}
-                    <Link
-                      to="#"
-                      // onClick={logout}
-                    >
-                      <i className="icon-user"></i>Logout
-                    </Link>
-                    {/* )} */}
+                    {userId == null ? (
+                      <Link
+                        to="#"
+                        onClick={openModalFn}
+                      >
+                        <i className="icon-user"></i>Login
+                      </Link>
+                    ) : (
+                      <Link
+                        to="#"
+                        onClick={logout}
+                      >
+                        <i className="icon-user"></i>Logout
+                      </Link>
+                    )}
                   </li>
                 </ul>
               </li>
@@ -99,13 +149,13 @@ const Header = () => {
             <nav className="main-nav">
               <ul className="menu">
                 <li>
-                  <Link to="/">Shop</Link>
+                  <Link to="/shop">Shop</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/cart">Cart</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/checkout">Checkout</Link>
                 </li>
                 <li>
                   <Link to="/cart">Cart</Link>
@@ -227,7 +277,7 @@ const Header = () => {
                   {/* return ( */}
                   <div
                     className="product"
-                    //   data-id={cart?.id} key={`cart_${cart?.id}`}
+                  //   data-id={cart?.id} key={`cart_${cart?.id}`}
                   >
                     <div className="product-cart-details">
                       <h4 className="product-title">

@@ -16,11 +16,11 @@ import {
 const Category = () => {
   return (
     <div className="category pt-6 pb-4">
-      <div className="container-fluid px-5">
+      <div className="container px-5">
         <div className="row">
           <div className="col-12">
-            <div class="heading mb-3">
-              <h2 class="title-lg">Shop By Category</h2>
+            <div className="heading mb-3">
+              <h2 className="title-lg">Shop By Category</h2>
               <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
             </div>
             <Swiper
@@ -33,9 +33,12 @@ const Category = () => {
             >
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-1.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg>
+                      {/* <img src="/images/cat-1.jpg" alt="Banner" /> */}
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -50,9 +53,12 @@ const Category = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-1.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
+                      {/* <img src="/images/cat-1.jpg" alt="Banner" /> */}
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -68,9 +74,11 @@ const Category = () => {
 
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-2.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -85,9 +93,11 @@ const Category = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-3.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -102,9 +112,11 @@ const Category = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-4.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -119,9 +131,11 @@ const Category = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-1.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -136,9 +150,11 @@ const Category = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-4.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
                     </a>
 
                     <div className="banner-content banner-content-static text-center">
@@ -153,9 +169,11 @@ const Category = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item">
-                  <div className="banner mb-0 banner-cat">
+                  <div className="banner mb-0 banner-cat bg-transparent">
                     <a href="#">
-                      <img src="/images/cat-1.jpg" alt="Banner" />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
                     </a>
 
                     <div className="banner-content banner-content-static text-center">

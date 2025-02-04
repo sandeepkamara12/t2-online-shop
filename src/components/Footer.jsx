@@ -1,9 +1,11 @@
-import React from "react";
-
-const Footer = () => {
+import React, { useState } from "react";
+import Login from "../components/common/Login";
+import Register from "../components/common/Register";
+import Modal from "../components/common/Modal";
+const Footer = ({ openModal, closeModalFn }) => {
   return (
     <>
-      <div className="container-fluid px-5">
+      <div className="container px-5">
         <hr />
         <div className="row justify-content-center">
           <div className="col-lg-4 col-sm-6">
@@ -75,7 +77,7 @@ const Footer = () => {
       </div>
       <footer className="footer footer-dark bg-dark">
         <div className="footer-middle">
-          <div className="container-fluid px-5">
+          <div className="container px-5">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
                 <div className="widget widget-about">
@@ -235,7 +237,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div className="container-fluid px-5">
+          <div className="container px-5">
             <p className="footer-copyright">
               Copyright © 2019 Panda Store. All Rights Reserved.
             </p>
@@ -250,6 +252,58 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <Modal openModal={openModal} closeModalFn={closeModalFn}>
+        <div className="form-box">
+          <div className="form-tab">
+            <ul className="nav nav-pills nav-fill" role="tablist">
+              <li className="nav-item">
+                <a
+                  className="nav-link active"
+                  id="signin-tab"
+                  data-toggle="tab"
+                  href="#signin"
+                  role="tab"
+                  aria-controls="signin"
+                  aria-selected="true"
+                >
+                  Sign In
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  id="register-tab"
+                  data-toggle="tab"
+                  href="#register"
+                  role="tab"
+                  aria-controls="register"
+                  aria-selected="false"
+                >
+                  Register
+                </a>
+              </li>
+            </ul>
+            <div className="tab-content" id="tab-content-5">
+              <div
+                className="tab-pane fade show active"
+                id="signin"
+                role="tabpanel"
+                aria-labelledby="signin-tab"
+              >
+                <Login closeModalFn={closeModalFn} />
+              </div>
+              <div
+                className="tab-pane fade"
+                id="register"
+                role="tabpanel"
+                aria-labelledby="register-tab"
+              >
+                <Register />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
     </>
   );
 };

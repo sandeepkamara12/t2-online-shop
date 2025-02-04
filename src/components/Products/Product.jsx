@@ -2,10 +2,10 @@ import React from "react";
 
 const Product = ({ swiper }) => {
   return (
-    // <div class="product product-11 text-center">
-    <div className={`${swiper ? "col-12" : "col-6 col-md-4 col-lg-2"}`}>
+    // <div className="product product-11 text-center">
+    <div className={`${swiper ? "col-12" : "col-6 col-md-4 col-lg-3"}`}>
       <figure className="product-media">
-        <span class="product-label label-out">Out of Stock</span>
+        <span className="product-label label-out">Out of Stock</span>
         <a href="product.html">
           <img
             src="/images/product-1-1.jpg"
@@ -14,9 +14,9 @@ const Product = ({ swiper }) => {
           />
         </a>
 
-        <div class="product-action-vertical">
+        <div className="product-action-vertical">
           <label
-            class="btn-product-icon"
+            className="btn-product-icon"
             title="Add to wishlist"
             for="add-to-wishlist_1"
           >
@@ -42,7 +42,7 @@ const Product = ({ swiper }) => {
               id="add-to-wishlist_1"
             />
           </label>
-          <a href="#" class="btn-product-icon btn-quickview" title="Quick view">
+          <a href="#" className="btn-product-icon btn-quickview" title="Quick view">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -59,7 +59,7 @@ const Product = ({ swiper }) => {
               />
             </svg>
           </a>
-          <a href="#" class="btn-product-icon btn-compare" title="Compare">
+          <a href="#" className="btn-product-icon btn-compare" title="Compare">
             <span>Compare</span>
           </a>
         </div>
@@ -70,31 +70,31 @@ const Product = ({ swiper }) => {
           <a href="product.html">Petite Table Lamp</a>
         </h3>
         {/* <div className="product-price">$675,00</div> */}
-        <div class="product-size">
-          <a title="" class="text-uppercase active">
+        <div className="product-size">
+          <a title="" className="text-uppercase active">
             s
           </a>
-          <a title="" class="text-uppercase active">
+          <a title="" className="text-uppercase active">
             m
           </a>
-          <a title="" class="text-uppercase disabled">
+          <a title="" className="text-uppercase disabled">
             l
           </a>
-          <a title="" class="text-uppercase disabled">
+          <a title="" className="text-uppercase disabled">
             xl
           </a>
         </div>
-        <div class="product-price ">
-          <span class="new-price">$2000</span>
-          <span class="old-price">$5000</span>
-          <span class="ml-3 d-inline-block price-percentage">60% OFF</span>
+        <div className="product-price ">
+          <span className="new-price">$2000</span>
+          <span className="old-price">$5000</span>
+          <span className="ml-3 d-inline-block price-percentage">60% OFF</span>
         </div>
 
-        <div class="ratings-container">
-          <div class="ratings">
-            <div class="ratings-val" style={{ width: "80%" }}></div>
+        <div className="ratings-container">
+          <div className="ratings">
+            <div className="ratings-val" style={{ width: "80%" }}></div>
           </div>
-          <span class="ratings-text">(18 Reviews )</span>
+          <span className="ratings-text">(18 Reviews )</span>
         </div>
 
         <div className="product-nav product-nav-dots">
